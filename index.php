@@ -37,17 +37,14 @@
     
         <nav>
 
-        
-      
-    
-<img src="img/bamboo-logo.png">
-    <ul>
-     <li><a href="#">Home</a></li>
-       <li><a href="#">About</a></li>
-    <li><a href="#">Nature Preserve</a></li>
-    <li><a href="#">Tours</a></li>
-    <li><a href="#">Hours</a></li>
-    <li><a href="#">Contact Us</a></li>
+            <img src="img/bamboo-logo.png">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Nature Preserve</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Hours</a></li>
+            <li><a href="#">Contact Us</a></li>
                     
         </ul></nav>
     </header>
