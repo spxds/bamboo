@@ -32,7 +32,7 @@
 
     <header class="mainHeader">
 
-        <nav>
+        <nav class="navigation">
 
 <img src="img/bamboo-logo.png">
 

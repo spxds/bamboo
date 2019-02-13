@@ -89,10 +89,6 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
 
 /* ===========================
    ========= Headings ========
@@ -138,38 +134,28 @@ textarea {
       ===== Main Navigation =====
       =========================== */
 
-   .mainHeader nav {
-       background:rgba(51, 51, 51, 0.747);
+      .navigation {
+        font-family: 'Open Sans Condensed', sans-serif;
        font-size: 1.5em;
-       height: 91px;
-       width: 100%;
-       line-height: 30px;
-       margin: 0 auto 30px auto;
-       text-align: center;
-       font-family: 'Open Sans Condensed', sans-serif;
-       overflow: hidden;
-       margin: 0 auto;
-       display: flex;
-    flex-direction: row;
-    align-content: center;
+        margin: 0;
+        background:rgba(51, 51, 51, 0.747);
+            display: flex;
+            flex-flow: row;
+            /* This aligns items to the end line on main-axis */
+            justify-content: flex-start;
+          }
+
+          .navigation a {
+            text-decoration: none;
+            display: block;
+            padding: 1em;
+            color: white;
+          }
 
 
-
-   }
-
-
-   .mainHeader nav a:link, .mainHeader nav a:visited {
-       color: #fff;
-       text-decoration: none;
-       border-radius: 5px;
-
-   }
-   .mainHeader nav a:hover, .mainHeader nav a:active,
-   .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
-       background: #588D17;
-       color: #fff;
-
-   }
+      .navigation a:hover {
+        background:#588D17;
+      }
 
 
    .mainHeader img {
@@ -297,58 +283,39 @@ textarea {
 }
 
 /* ==========================================================================
-   Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Custom styles
    ========================================================================== */
+
+
 
 /* ===========================
    ====== Media Queries ======
    =========================== */
 
-   @media only screen and (min-width : 150px) and (max-width : 767px)
-   {
+   @media screen and (max-width: 1024px) and (min-width: 678px){
 
-       html {
+    html {
 
-       background-image: url('../img/bg.jpg');
-       background-size: cover;
-       background-repeat: no-repeat;
+        background-image: url('../img/bg.jpg');
+        background-size: 200%;
+        background-repeat: no-repeat;
+        background-position: top;
 
    }
 
 
-       .mainHeader nav {
-       background: #333;
-           font-size: 1.45em;
-           height: 350px;
-           font-weight: bold;
-           display: flex;
-           flex-direction: column;
-          }
+    .navigation {
+      justify-content: flex-end;
+
+
+    }
+    .navigation a{
+width:80%;
+font-size: 91%;
+    }
 
 
 
-       .mainHeader nav a:link, .mainHeader nav a:visited {
-           color: #FFF;
-           margin: 5px 30px;
-           padding: 5px 0;
-           text-decoration: none;
-
-       }
-
-       .mainHeader nav a:active,
-       .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
-           background: #588D17;
-           color: #fff;
-           text-shadow: none !important;
-           border-radius: 5px;
-       }
-
-       .mainHeader nav a:hover{
-margin: 10px;
-
-       }
 
        .mainHeader img {
 
@@ -399,6 +366,57 @@ margin: 10px;
 
     }
 
+
+    /* Small screens */
+@media all and (max-width: 500px) {
+
+
+    html {
+
+        background-image: url('../img/bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .navigation {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+      background:#333;
+
+
+    }
+
+
+        .navigation a {
+          text-align: center;
+          padding: 10px;
+          border-top: 1px solid rgba(255, 255, 255, 0.3);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        article.topcontent{
+            width: 83%;
+        }
+    }
+
+    @media only screen and (orientation: landscape) {
+        html {
+
+            background-image: url('../img/bg.jpg');
+            background-size: 180%;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+        .navigation {
+            width:120%;
+
+           font-size: 140%;
+
+
+          }
+      }
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
