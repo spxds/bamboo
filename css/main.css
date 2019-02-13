@@ -292,7 +292,7 @@ textarea {
    ====== Media Queries ======
    =========================== */
 
-   @media screen and (max-width: 1024px) and (min-width: 678px){
+   @media screen and (max-width: 1024px) and (min-width: 900px){
 
     html {
 
@@ -386,6 +386,7 @@ font-size: 91%;
       background:#333;
 
 
+
     }
 
 
@@ -400,17 +401,17 @@ font-size: 91%;
         }
     }
 
-    @media only screen and (orientation: landscape) {
+    @media only screen and (max-width: 1024px) and (orientation: landscape) {
         html {
 
             background-image: url('../img/bg.jpg');
-            background-size: 180%;
+            background-size: 200%;
             background-repeat: no-repeat;
             background-position: center;
 
         }
         .navigation {
-            width:120%;
+            width:100%;
 
            font-size: 140%;
 
