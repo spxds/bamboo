@@ -292,7 +292,7 @@ textarea {
    ====== Media Queries ======
    =========================== */
 
-   @media screen and (max-width: 1024px) and (min-width: 900px){
+   @media screen and (max-width: 1024px) and (min-width: 600px){
 
     html {
 
@@ -417,6 +417,10 @@ font-size: 91%;
 
 
           }
+
+          article.topcontent{
+            width: 80%;
+        }
       }
 
 @media print,
