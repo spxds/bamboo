@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="">
 
 <head>
   <meta charset="utf-8">
@@ -14,8 +14,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css">
 </head>
 
 
@@ -48,28 +48,31 @@
     </header>
 
     <div class="mainContent">
-        <div class="content">
-                <article class="topcontent">
-                    <header>
+        <main class="content">
+                <section class="topcontent">
+
                         <h2>DISCOVER BAMBOO TRAIL</h2>
-                    </header>
 
 
-                    <content>
+
+                    <article>
                         <p>Discover the trails of the Babmoo Nature Preserve. Lush nature trails...Id saepe essent nostrum mel, mel te aliquid propriae platonem. No melius audiam hendrerit nam, quot euismod propriae mel ad, iisque consetetur per an. Nam id philosophia intellegebat, ut eum mazim nihil corrumpit. His et suas urbanitas cotidieque, mea at assum definitionem. Est no novum singulis, id duo nostrud conceptam, mea causae fuisset intellegam ut.</p>
 
-                    </content>
+                    </article>
 
-                </article>
+                </section>
 
 
 
-        </div>
+        </main>
 
     </div>
 
-
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+
+  </body>
